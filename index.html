@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Task List</title>
+    <meta charset="utf-8" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style_one.css" />
+    <link rel="stylesheet" href="./css/style_two.css" />
+    <!-- <link -->
+      <!-- href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" -->
+      <!-- rel="stylesheet" -->
+    <!-- /> -->
+  </head>
+
+  <body>
+    <div id="wrapper" class="cf">
+      <div id="sidebar">
+        <h1>TODO List</h1>
+        <p>Add the tasks to your own TODO list</p>
+
+        <ul id="task-list"></ul>
+      </div>
+      <div id="task-container">
+        <textarea
+          id="task"
+          name="task"
+          placeholder="Tasks for today..."
+        ></textarea>
+      </div>
+    </div>
+
+    <script type="text/x-handlebars-template" id="task-template">
+      {{task}}
+      <a href="#" class="delete">
+        ×
+      </a>
+      <a href="#" class="check">
+        ☐
+      </a>
+    </script>
+<script type="text/x-handlebars-template" id="template">
+      {{task}}
+      <a href="#" class="delete">
+        ×
+      </a>
+      <a href="#" class="check">
+        ☑
+      </a>
+    </script>
+    <!-- Library JS -->
+    <script src="./js/script_one.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/script_two.js"></script>
+  </body>
+</html>
